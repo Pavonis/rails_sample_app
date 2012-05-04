@@ -30,7 +30,10 @@ group :test, :development do
 end
 
 group :test do
+  gem 'rspec-rails', '2.9.0'
   gem 'capybara', '1.1.2'
+  #gem 'rb-fsevent', '0.4.3.1', :require => false
+  gem 'growl', '1.0.3'
   gem 'factory_girl_rails', '1.4.0'
   gem 'cucumber-rails', '1.2.1', require: false
   gem 'database_cleaner', '0.7.0'
