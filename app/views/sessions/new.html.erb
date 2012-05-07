@@ -1,0 +1,18 @@
+<% provide(:title, "Sign In") %>
+<div class = "row">
+	<div class="span6 offset3">
+		<h1><%= yield(:title) %></h1>
+		<%= form_for(:session, url: sessions_path) do |f| %>
+			
+			<%= f.label :email %>
+			<%= f.email_field :email %>
+			
+			<%= f.label :password %>
+			<%= f.password_field :password %>
+			
+			<%= f.submit "Sign In", class: "btn btn-large btn-primary" %>
+		<% end  %>
+		
+		<%= link_to "Sign Up Now!", signup_path, class: "btn btn-small btn-secondary" %>
+	</div>
+</div>
